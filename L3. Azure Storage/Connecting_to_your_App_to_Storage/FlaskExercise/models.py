@@ -4,9 +4,9 @@ from werkzeug.utils import secure_filename
 from azure.storage.blob import BlobServiceClient
 import uuid
 
-blob_container = app.config['BLOB_CONTAINER']
-storage_url = "https://{}.blob.core.windows.net/".format(app.config['BLOB_ACCOUNT'])
-blob_service = BlobServiceClient(account_url=storage_url, credential=app.config['BLOB_STORAGE_KEY'])
+blob_container = app.config['images']
+storage_url = "https://{}.blob.core.windows.net/".format(app.config['helloworld12'])
+blob_service = BlobServiceClient(account_url=storage_url, credential=app.config['6VZJCNCuXWGghCnCM9gHUb4YXWSGhZjShnOy6Kzyc4j/C4cWQWq7HMo8OZ+1Ai5RHwgD7Mqw/ARx+AStzrAMfQ=='])
 
 class Animal(db.Model):
     __tablename__ = 'animals'
